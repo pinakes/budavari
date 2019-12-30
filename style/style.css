@@ -24,3 +24,25 @@
 	}
 
 }
+
+.spotifyBadge {
+	 width: 128px;
+	 height: auto;
+	 display: block;
+	 margin-bottom: 1em; 
+}
+.spotifyBadge img {
+	width: 100%;
+}
+.social {
+	width: 42px;
+	height: 42px;
+	display: block;
+	float: left;
+	margin-right: 0.5em;
+	margin-bottom: 1em;
+}
+.social img {
+	width: 100%;
+	height: auto;
+}
