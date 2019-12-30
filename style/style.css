@@ -1,0 +1,26 @@
+.container-sm-custom {
+	max-width: 540px;
+	padding-top: 15px;
+}
+.player {
+	width: 100%;
+	height: 682px;
+}
+
+/* iphone X and before */
+@media (max-width: 375px) {
+	.player {
+		width: 100%;
+		height: 518px;
+	}
+
+}
+
+/* iphone Plus and pixel XL and before */
+@media (min-width: 376px) and (max-width: 414px) {
+	.player {
+		width: 100%;
+		height: 560px;
+	}
+
+}
