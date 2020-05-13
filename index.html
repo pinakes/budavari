@@ -4,45 +4,70 @@
 	<title>Budavari</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style/style.css" />
 </head>
 <body>
-	<div class="container-sm container-sm-custom">
-		<div class="row">
-			<div class="col">
-				<iframe class="player" style="border: 0;" src="https://bandcamp.com/EmbeddedPlayer/album=2892271700/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="http://budavari.bandcamp.com/album/un-gatto-algoritmo">Un gatto / Algoritmo by Budavari</a></iframe>
-			</div>
-		</div>
+	<div class="container-fluid no-padding">
+		<!--my modal-->
+		<div class="modal fade" id="watchthevideo">
+				<div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+					<div class="modal-content">
+						<div class="modal-body no-padding">
+							<div class="embed-responsive embed-responsive-16by9">
+								<iframe src="https://www.youtube.com/embed/_VOw4f0d8zc" frameborder="0" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div><!-- /.modal-content -->
+				</div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
 
-		<div class="row">
-			<div class="col-md-12">
-				<h3>Budavari</h3>
+
+		<div class="env">
+			<h1>Budavari</h1>
+			<!--<video playsinline autoplay muted loop poster="assets/video.png" id="video">
+				<source src="assets/video.mp4" type="video/mp4">
+				<source src="assets/video.ogg" type="video/ogg">
+			</video>-->
+			<h2>Algoritmo</h2>
+			<button type="button" class="play" data-toggle="modal" data-target="#watchthevideo">watch the video</button>
+		</div><!--env-->
+	</div><!--container-fluid-->
+	<div class="container">
+
+		<div class="row content">
+			<div class="col-md-4">
+				<h3>Who is Budavari?</h3>
+			</div>
+			<div class="col-md-6">
 				<p>Budavari is whom we all fear, he seems invincible. <br> Budavari is the enemy within each one of us.	<br>The project was born in New York, inspired by the music from a place and a time far away. <br>It&apos;s getting tougher out there, but we are fighting back, and the first quarter is almost over.</p>
 			</div>
 		</div>
-		<hr>
-		<div class="row">
-			<!--<div class="col-md-6">
-				<iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:4Ysy9xlEfWZkdbUYJPQLK7&size=detail&theme=light&show-count=0" width="100%" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
-			</div>-->
-			<div class="col-md-12">
-				<!--<h5>Listen Budavari on</h5>-->
+
+		<div class="row content">
+			<div class="col-md-4">
+				<h3>Listen</h3>
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-4">
+				<iframe class="player" style="border: 0;" src="https://bandcamp.com/EmbeddedPlayer/album=2892271700/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="http://budavari.bandcamp.com/album/un-gatto-algoritmo">Un gatto / Algoritmo by Budavari</a></iframe>
+			</div>
+			<div class="col-md-4">
+				<hr style="margin-top: 0">
 				<a class="spotifyBadge" href="https://open.spotify.com/artist/4Ysy9xlEfWZkdbUYJPQLK7?si=IAnbAorJSuK7_USq0iZ9rA"><img src="assets/Spotify_Logo_RGB_Black.png"></a>
-			</div>
-			<div class="col-md-6">
+				<hr>
 				<a href="https://geo.music.apple.com/us/artist/budavari/1492010944?mt=1&app=music&ls=1" style="display:inline-block;overflow:hidden;background:url(https://tools.applemusic.com/en-us/lockup.svg?kind=artist&bubble=apple_music&style=mono-black) no-repeat;background-size: 100%;width: 176px;height: 38px;"></a>
 			</div>
 		</div>
-		<hr>
-		<div class="row">
+		<div class="row content">
 			<div class="col-md-12">
-				<h5>Follow Budavari on</h5>
+				<hr>
 			</div>
-			<div class="col-md-6">
+			<div class="col-xs-6 col-md-6">
+				<h3>Follow Budavari</h3>
+			</div>
+			<div class="col-xs-6 col-md-6">
 				<a class="social" href="http://instagram.com/budavarisound"><img src="assets/instagram.png"></a>
 				<a class="social" href="http://facebook.com/budavarisound"><img src="assets/facebook.png"></a>
 				<a class="social" href="http://twitter.com/budavarisound"><img src="assets/twitter.png"></a>

@@ -1,17 +1,94 @@
+p {
+	letter-spacing: 0.5px;
+}
+hr {
+	border-top: 1px solid rgba(0,0,0,1);
+}
+.no-padding {
+	padding: 0;
+}
 .container-sm-custom {
 	max-width: 540px;
 	padding-top: 15px;
 }
 .player {
 	width: 100%;
-	height: 682px;
+	height: 350px;
+}
+.content {
+	margin-top: 108px;
+}
+h1 {
+	display: block;
+    width: 141px;
+    height: 21px;
+    overflow: hidden;
+    text-indent: -900px;
+    background: url(../assets/budavari.png) no-repeat;
+    background-size: cover;
+    margin: 70px auto 0 auto;
+}
+h2 {
+	letter-spacing: 1px;
+	margin: 30vh auto 0 auto;
+    display: block;
+    width: 650px;
+    height: 119px;
+    background: url(../assets/algoritmo-title.png) no-repeat;
+    background-size: cover;
+    text-indent: -9000px;
+    overflow: hidden;
+}
+button.play {
+	margin: 40px auto 0 auto;
+    display: block;
+    width: 74px;
+    height: 74px;
+    background: url(../assets/play.png) no-repeat;
+    background-size: cover;
+    text-indent: -9000px;
+    overflow: hidden;
+    border: none;
+}
+button.play:hover {
+	background: url(../assets/play-over.png) no-repeat;
+	background-size: cover;
+}
+button.play:focus {
+	outline: none;
+}
+video#video {
+	position: absolute;
+	min-width: 100vw;
+	min-height: 100vh;
+	top: 0;
+	right: 0;
+	background: url(assets/video.png) no-repeat;
+	background-size: cover;
+}
+.env {	
+    display: table;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: url(../assets/algoritmo-bg.jpg) no-repeat;
+	background-size: cover;
 }
 
 /* iphone X and before */
 @media (max-width: 375px) {
 	.player {
 		width: 100%;
-		height: 518px;
+		height: 345px;
+	}
+	h2 {
+		width: 90%;
+    	height: 78px;
+    	background-size: 100%;
+	}
+	.social {
+		float: left;
 	}
 
 }
@@ -20,9 +97,22 @@
 @media (min-width: 376px) and (max-width: 414px) {
 	.player {
 		width: 100%;
-		height: 560px;
+		height: 380px;
+	}
+	h2 {
+		width: 90%;
+    	height: 78px;
+    	background-size: 100%;
+	}
+	.social {
+		float: left;
 	}
 
+}
+@media (min-width: 450px) {
+	.social {
+		float: right;
+	}
 }
 
 .spotifyBadge {
@@ -34,11 +124,13 @@
 .spotifyBadge img {
 	width: 100%;
 }
+.socials {
+	text-align: right;
+}
 .social {
 	width: 42px;
 	height: 42px;
 	display: block;
-	float: left;
 	margin-right: 0.5em;
 	margin-bottom: 1em;
 }
