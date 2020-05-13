@@ -39,6 +39,12 @@ h2 {
     text-indent: -9000px;
     overflow: hidden;
 }
+p.comingsoon {
+	width: 100%;
+    text-align: center;
+    margin-top: 41px;
+    color: #EFEADA;
+}
 button.play {
 	margin: 40px auto 0 auto;
     display: block;
